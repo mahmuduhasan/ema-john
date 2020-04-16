@@ -14,34 +14,47 @@ import Review from './components/Review/Review';
 import Inventory from './components/Inventory/Inventory';
 import Notfound from './components/Notfound/Notfound';
 import ProductDetail from './components/ProductDetail/ProductDetail';
+import Login from './components/Login/Login';
+import { AuthContextProvider, PrivateRoute } from './components/Login/useAuth';
+import Shipment from './components/Shipment/Shipment';
 
-function App() {
+
+
+
+function App(props) {
   return (
     <div>
-      <Header></Header>
-      <Router>
-        <Switch>
-          <Route path="/review">
-            <Review></Review>
-          </Route>
-          <Route path="/inventory">
-            <Inventory></Inventory>
-          </Route>
-          <Route path="/shop">
-            <Shop></Shop>
-          </Route>
-          <Route exact path="/">
-            <Shop></Shop>
-          </Route>
-          <Route path="/product/:productKey">
-            <ProductDetail></ProductDetail>
-          </Route>
-          <Route path="*">
-            <Notfound></Notfound>
-          </Route>
-        </Switch>
-      </Router>
-      
+      <AuthContextProvider>
+        <Header></Header>
+        <Router>
+          <Switch>
+            <Route path="/review">
+              <Review></Review>
+            </Route>
+            <Route path="/inventory">
+              <Inventory></Inventory>
+            </Route>
+            <Route path="/shop">
+              <Shop></Shop>
+            </Route>
+            <Route exact path="/">
+              <Shop></Shop>
+            </Route>
+            <Route path="/product/:productKey">
+              <ProductDetail></ProductDetail>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/shipment">
+              <Shipment></Shipment>
+            </PrivateRoute>
+            <Route path="*">
+              <Notfound></Notfound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthContextProvider>
     </div>
   );
 }
