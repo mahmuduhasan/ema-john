@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.16.1
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle ema-john-simple@0.1.0~prestart: ema-john-simple@0.1.0
+6 info lifecycle ema-john-simple@0.1.0~start: ema-john-simple@0.1.0
+7 verbose lifecycle ema-john-simple@0.1.0~start: unsafe-perm in lifecycle true
+8 verbose lifecycle ema-john-simple@0.1.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\WebDevelopment\ema-john-simple\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mahmudul Hasan\bin;C:\Python27;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Users\Mahmudul Hasan\AppData\Local\Microsoft\WindowsApps;C:\Users\Mahmudul Hasan\AppData\Local\Microsoft\WindowsApps;C:\Users\Mahmudul Hasan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mahmudul Hasan\AppData\Roaming\npm
+9 verbose lifecycle ema-john-simple@0.1.0~start: CWD: C:\WebDevelopment\ema-john-simple
+10 silly lifecycle ema-john-simple@0.1.0~start: Args: [ '/d /s /c', 'react-scripts start' ]
+11 timing npm Completed in 148935ms
+12 error cb() never called!
+13 error This is an error with npm itself. Please report this error at:
+14 error <https://npm.community>
